@@ -1,19 +1,21 @@
-package com.example.demo.controller;
+package com.example.demo.Controller;
 
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.example.demo.Model.AccountModel;
 
-@RestController
-@RequestMapping("/account")
+import java.util.UUID;
+
+// Controller 基类
 public class BaseController {
 
-    @GetMapping("/{id}")
-    public  String getById(@PathVariable Integer id){
-        System.out.println("id==>"+id);
-        return "Hello Jason, Hello World";
+    // 引入实体类
+    public AccountModel account;
 
+    // 构造函数初始化实体类
+    public BaseController(String name, Integer age) {
+        account = new AccountModel();
+        account.name = name;
+        account.age = age;
+        account.id = UUID.randomUUID().toString();
     }
 }
