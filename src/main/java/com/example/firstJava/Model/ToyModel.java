@@ -1,6 +1,4 @@
-package com.example.christJava.Model;
-
-import java.util.List;
+package com.example.firstJava.Model;
 
 // 玩具基类
 public class ToyModel {

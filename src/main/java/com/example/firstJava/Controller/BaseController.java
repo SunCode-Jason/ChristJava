@@ -1,7 +1,7 @@
-package com.example.christJava.Controller;
+package com.example.firstJava.Controller;
 
 
-import com.example.christJava.Model.AccountModel;
+import com.example.firstJava.Model.AccountModel;
 
 import java.util.UUID;
 

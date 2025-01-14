@@ -1,4 +1,4 @@
-package com.example.christJava.Model;
+package com.example.firstJava.Model;
 
 public class PlaneModel extends ToyModel {
 

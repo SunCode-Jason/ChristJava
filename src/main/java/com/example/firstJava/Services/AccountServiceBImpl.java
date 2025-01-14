@@ -1,9 +1,9 @@
-package com.example.christJava.Services;
+package com.example.firstJava.Services;
 
-import com.example.christJava.Model.AccountModel;
-import com.example.christJava.Model.CarModel;
-import com.example.christJava.Model.PlaneModel;
-import com.example.christJava.Model.ToyModel;
+import com.example.firstJava.Model.AccountModel;
+import com.example.firstJava.Model.CarModel;
+import com.example.firstJava.Model.PlaneModel;
+import com.example.firstJava.Model.ToyModel;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -11,21 +11,28 @@ import java.util.List;
 import java.util.UUID;
 
 @Service
-public class AccountServiceBImpl implements  AccountService{
+public class AccountServiceBImpl implements AccountService {
 
-    private  final AccountModel accountModel;
+    private final AccountModel accountModel;
+
     public AccountServiceBImpl() {
-        accountModel= new AccountModel();
+        accountModel = new AccountModel();
         accountModel.id = UUID.randomUUID().toString();
         accountModel.age = 25;
         accountModel.name = "Jason Doe";
-        accountModel.toyList=new ArrayList<>();
+        accountModel.toyList = new ArrayList<>();
         accountModel.toyList.add(new CarModel("cal"));
         accountModel.toyList.add(new CarModel("cal"));
         accountModel.toyList.add(new PlaneModel("plane"));
     }
+
     @Override
     public AccountModel GetAccountProfile() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         return accountModel;
     }
 

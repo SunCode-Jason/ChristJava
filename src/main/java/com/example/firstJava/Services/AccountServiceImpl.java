@@ -1,9 +1,9 @@
-package com.example.christJava.Services;
+package com.example.firstJava.Services;
 
-import com.example.christJava.Model.AccountModel;
-import com.example.christJava.Model.CarModel;
-import com.example.christJava.Model.PlaneModel;
-import com.example.christJava.Model.ToyModel;
+import com.example.firstJava.Model.AccountModel;
+import com.example.firstJava.Model.CarModel;
+import com.example.firstJava.Model.PlaneModel;
+import com.example.firstJava.Model.ToyModel;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -28,6 +28,11 @@ public class AccountServiceImpl implements AccountService {
 
     // 获取用户文件
     public  AccountModel GetAccountProfile(){
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         return accountModel;
     }
 

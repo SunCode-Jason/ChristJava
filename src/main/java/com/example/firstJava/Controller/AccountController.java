@@ -1,7 +1,7 @@
-package com.example.christJava.Controller;
+package com.example.firstJava.Controller;
 
-import com.example.christJava.Model.AccountModel;
-import com.example.christJava.Services.AccountService;
+import com.example.firstJava.Model.AccountModel;
+import com.example.firstJava.Services.AccountService;
 import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

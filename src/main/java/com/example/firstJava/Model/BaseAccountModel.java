@@ -1,6 +1,5 @@
-package com.example.christJava.Model;
+package com.example.firstJava.Model;
 
-import java.util.Comparator;
 import java.util.List;
 
 public abstract class BaseAccountModel<TType extends ToyModel> extends BaseModel {

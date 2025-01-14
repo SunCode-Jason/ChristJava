@@ -1,7 +1,7 @@
-package com.example.christJava.Services;
+package com.example.firstJava.Services;
 
-import com.example.christJava.Model.AccountModel;
-import com.example.christJava.Model.ToyModel;
+import com.example.firstJava.Model.AccountModel;
+import com.example.firstJava.Model.ToyModel;
 
 import java.util.List;
 

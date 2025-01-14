@@ -1,4 +1,4 @@
-package com.example.christJava.Model;
+package com.example.firstJava.Model;
 
 import java.util.ArrayList;
 
