@@ -1,4 +1,4 @@
-package com.example.demo.Model;
+package com.example.christJava.Model;
 
 public class BaseModel {
 
