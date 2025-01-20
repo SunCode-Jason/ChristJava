@@ -1,13 +1,21 @@
 package com.example.firstJava.AOP;
 
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 
 @Component // 标记为IOC组件
 @Aspect // 标记为AOP类
 public class SimpleAOP {
+
+    //前置通知
+    @Before("execution(* com.example.firstJava.Services.*.*(..))")
+    public void before(JoinPoint joinPoint) {
+        System.out.println(joinPoint.getSignature() + "开始执行");
+    }
 
     //  参数是一个表达式，表示针对哪些特定方法进行编程
     //  com.example.christJava.Services 包名
